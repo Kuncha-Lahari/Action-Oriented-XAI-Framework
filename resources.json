@@ -1,0 +1,158 @@
+[
+  {
+    "id": "res_01",
+    "title": "Google Data Analytics Professional Certificate",
+    "type": "certification",
+    "provider": "Coursera",
+    "description": "Entry-level certificate covering data cleaning, analysis, and visualization. No degree required, typically completed in three to six months.",
+    "url": "https://www.coursera.org/professional-certificates/google-data-analytics",
+    "applies_to": [
+      "education",
+      "education_num",
+      "occupation"
+    ]
+  },
+  {
+    "id": "res_02",
+    "title": "edX Verified Certificate Programs",
+    "type": "course",
+    "provider": "edX",
+    "description": "University-backed courses and MicroMasters programs in business, computer science, and data science, with verified certificates that count toward degree credit at partner institutions.",
+    "url": "https://www.edx.org",
+    "applies_to": [
+      "education",
+      "education_num"
+    ]
+  },
+  {
+    "id": "res_03",
+    "title": "LinkedIn Learning Skill Certifications",
+    "type": "certification",
+    "provider": "LinkedIn Learning",
+    "description": "Short, job-focused courses with shareable certificates in management, technical skills, and software tools, aimed at people changing occupation without returning to full-time study.",
+    "url": "https://www.linkedin.com/learning",
+    "applies_to": [
+      "education",
+      "occupation"
+    ]
+  },
+  {
+    "id": "res_04",
+    "title": "O*NET OnLine Occupation Explorer",
+    "type": "tool",
+    "provider": "O*NET",
+    "description": "Free government database of occupation profiles: required skills, typical education, job outlook, and related occupations, used to research a target role before committing to a transition.",
+    "url": "https://www.onetonline.org",
+    "applies_to": [
+      "occupation"
+    ]
+  },
+  {
+    "id": "res_05",
+    "title": "CareerOneStop Training Finder",
+    "type": "tool",
+    "provider": "U.S. Department of Labor",
+    "description": "Searchable directory of local training programs, apprenticeships, and certifications by occupation and zip code, including financial aid eligibility.",
+    "url": "https://www.careeronestop.org/Training/find-training.aspx",
+    "applies_to": [
+      "occupation",
+      "education"
+    ]
+  },
+  {
+    "id": "res_06",
+    "title": "Google Career Certificates",
+    "type": "certification",
+    "provider": "Grow with Google",
+    "description": "Six-month, low-cost certificate programs in IT support, project management, UX design, and cybersecurity, designed for career changers with no prior experience in the field.",
+    "url": "https://grow.google/certificates",
+    "applies_to": [
+      "occupation",
+      "education"
+    ]
+  },
+  {
+    "id": "res_07",
+    "title": "Indeed Job Search by Occupation",
+    "type": "job_search",
+    "provider": "Indeed",
+    "description": "Job listings filterable by occupation title, salary range, and required experience level, useful for confirming a target occupation is actually hiring locally before pursuing a transition.",
+    "url": "https://www.indeed.com",
+    "applies_to": [
+      "occupation",
+      "hours_per_week"
+    ]
+  },
+  {
+    "id": "res_08",
+    "title": "Upwork Freelance Marketplace",
+    "type": "job_search",
+    "provider": "Upwork",
+    "description": "Freelance and contract work platform for taking on additional paid hours outside a primary job, in writing, design, admin support, and technical fields.",
+    "url": "https://www.upwork.com",
+    "applies_to": [
+      "hours_per_week"
+    ]
+  },
+  {
+    "id": "res_09",
+    "title": "IRS Volunteer Income Tax Assistance (VITA)",
+    "type": "advisory_service",
+    "provider": "Internal Revenue Service",
+    "description": "Free, IRS-certified tax preparation help for people below a certain income threshold, including guidance on reporting capital gains and losses correctly.",
+    "url": "https://www.irs.gov/individuals/irs-tax-volunteers",
+    "applies_to": [
+      "capital_gain",
+      "capital_loss"
+    ]
+  },
+  {
+    "id": "res_10",
+    "title": "Khan Academy Free Courses",
+    "type": "course",
+    "provider": "Khan Academy",
+    "description": "Free, self-paced courses covering foundational math, economics, and personal finance, useful as preparation before enrolling in a paid certificate or degree program.",
+    "url": "https://www.khanacademy.org",
+    "applies_to": [
+      "education",
+      "education_num"
+    ]
+  },
+  {
+    "id": "res_11",
+    "title": "SCORE Free Business Mentoring",
+    "type": "advisory_service",
+    "provider": "SCORE (partnered with the U.S. Small Business Administration)",
+    "description": "Free one-on-one mentoring from volunteer business experts for people considering self-employment, small-business planning, or an occupation/workclass transition.",
+    "url": "https://www.score.org",
+    "applies_to": [
+      "occupation",
+      "workclass"
+    ]
+  },
+  {
+    "id": "res_12",
+    "title": "Coursera Personal and Family Financial Planning",
+    "type": "course",
+    "provider": "Coursera",
+    "description": "Financial literacy course covering budgeting, saving, and understanding investment basics, intended as general education rather than personalized investment advice.",
+    "url": "https://www.coursera.org/learn/personal-family-financial-planning",
+    "applies_to": [
+      "capital_gain",
+      "capital_loss"
+    ]
+  },
+  {
+    "id": "res_13",
+    "title": "Apprenticeship.gov Program Finder",
+    "type": "tool",
+    "provider": "U.S. Department of Labor",
+    "description": "Directory of registered apprenticeship programs that combine paid on-the-job training with classroom instruction, an alternative path to raising education level or occupation skill without upfront tuition.",
+    "url": "https://www.apprenticeship.gov",
+    "applies_to": [
+      "education",
+      "occupation",
+      "education_num"
+    ]
+  }
+]

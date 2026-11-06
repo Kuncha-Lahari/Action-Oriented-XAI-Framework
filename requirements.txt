@@ -1,0 +1,32 @@
+# Core ML
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0,<2.0
+xgboost>=2.0.0
+scipy>=1.11.0
+
+# Counterfactual explanations
+dice-ml>=0.11
+
+# Causal reasoning
+networkx>=3.1
+dowhy>=0.11
+# causal-learn is installed from source on Python 3.12:
+# pip install "causal-learn @ git+https://github.com/py-why/causal-learn.git"
+
+# RAG
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.2
+
+# HTTP / environment
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Configuration
+pyyaml>=6.0
+
+# Optional interactive UI
+streamlit>=1.36.0
+
+# Optional paid LLM backend
+openai>=1.10.0

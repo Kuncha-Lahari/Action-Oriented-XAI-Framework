@@ -1,0 +1,116 @@
+# -----------------------------------------------------------------------------
+# config.yaml
+# Central configuration for the Action-Oriented XAI Framework.
+# -----------------------------------------------------------------------------
+
+# -----------------------------------------------------------------------------
+# Data (loader.py)
+# -----------------------------------------------------------------------------
+data:
+  test_size: 0.2
+  random_state: 42
+  force_synthetic: false
+
+# -----------------------------------------------------------------------------
+# Predictor (predictor.py)
+# -----------------------------------------------------------------------------
+predictor:
+  random_state: 42
+  decision_threshold: 0.5
+  boundary_exclusion_margin: 0.05
+  boundary_min_probability: 0.30
+
+  logistic_regression:
+    max_iter: 1000
+
+  random_forest:
+    n_estimators: 200
+    max_depth: 12
+
+  xgboost:
+    n_estimators: 200
+    max_depth: 6
+    learning_rate: 0.1
+
+# -----------------------------------------------------------------------------
+# Causal SCM (causal_scm.py)
+# -----------------------------------------------------------------------------
+scm:
+  ci_test: kci
+  n_bins: 10
+  max_sample_rows: 500
+  random_state: 42
+  alpha_schedule: [0.05, 0.2, 0.5]
+
+# -----------------------------------------------------------------------------
+# Counterfactual search (counterfactual.py)
+# -----------------------------------------------------------------------------
+counterfactual:
+  max_iterations: 4
+  initial_total_cfs: 5
+  cfs_growth_factor: 2
+  sparsity_penalty_weight: 0.5
+  causal_distance_weight: 0.25
+  target_margin: 0.05
+
+  integer_valued_features:
+    - education_num
+    - hours_per_week
+    - capital_gain
+    - capital_loss
+    - age
+
+# -----------------------------------------------------------------------------
+# RAG retrieval (rag_retrieval.py)
+# -----------------------------------------------------------------------------
+rag:
+  resources_path: resources.json
+  default_top_k: 3
+  min_similarity: 0.05
+  sentence_transformer_model: sentence-transformers/all-MiniLM-L6-v2
+  onet_base_url: https://api-v2.onetcenter.org
+  onet_timeout_seconds: 10
+
+# -----------------------------------------------------------------------------
+# LLM synthesis (llm_synthesis.py)
+# -----------------------------------------------------------------------------
+llm:
+  ollama_host: http://localhost:11434
+  ollama_model: llama3.2:3b
+  ollama_timeout_seconds: 120
+  ollama_num_predict: 160
+  ollama_num_ctx: 2048
+  openai_model: gpt-4o
+  openai_timeout_seconds: 60
+
+# -----------------------------------------------------------------------------
+# Evaluation (evaluator.py)
+# -----------------------------------------------------------------------------
+evaluation:
+  default_n_cases: 10
+  default_ablation_total_cfs: 5
+  default_random_seed: 42
+  selection_mode: boundary
+
+  baseline_comparison:
+    default_n_cases: 5
+    dice_total_cfs: 10
+    wachter_n_steps: 200
+    ustun_max_changes: 3
+
+# -----------------------------------------------------------------------------
+# UI (app.py)
+#
+# The UI defaults below are set so that the dashboard demo matches the
+# evaluation budget used in the paper (4 iterations × 5 initial
+# candidates). Lowering these in the sidebar will speed up individual
+# runs at the cost of a much lower success rate.
+# -----------------------------------------------------------------------------
+ui:
+  default_backend: ollama
+  cf_iterations_min: 1
+  cf_iterations_max: 4
+  cf_iterations_default: 4
+  cf_candidates_min: 1
+  cf_candidates_max: 8
+  cf_candidates_default: 5
